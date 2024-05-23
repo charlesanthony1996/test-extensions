@@ -1,0 +1,196 @@
+.highlight {
+  color: red;
+}
+
+.modal {
+display: none;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0,0,0,0.4);
+z-index: 9998;
+}
+
+.modal-text {
+font-size: 24px;
+font-family: sans-serif;
+text-align: center;
+line-height: 1.5;
+padding: 10px 0; 
+}
+
+.modal-text, .modal-counter {
+font-size: 24px; /* Unified font size for simplicity */
+font-family: sans-serif;
+text-align: center;
+line-height: 1.5;
+padding: 10px 0;
+}
+
+.modal-content {
+position: relative; /* Needed for absolute positioning of the close button */
+background-color: #242424; /* Black background for better visibility */
+color: #ffffff; /* White text for contrast */
+margin: 15% auto;
+padding: 20px;
+padding-top: 40px; /* Extra padding at the top for the close button */
+border-radius: 10px;
+width: 60vw;
+max-width: 800px; /* Adjusted max width */
+display: flex;
+flex-direction: column;
+justify-content: flex-start; /* Align items to the start */
+align-items: flex-start; /* Align items to the start */
+z-index: 9999;
+}
+
+.close {
+position: absolute; /* Positioning relative to modal-content */
+top: 10px; /* Distance from the top of modal-content */
+right: 20px; /* Distance from the right of modal-content */
+color: #aaa;
+font-size: 28px;
+font-weight: bold;
+cursor: pointer;
+transition: color 0.3s ease;
+}
+
+.close:hover, .close:focus {
+color: #DB5132; 
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-btn, .modal-btn-gen {
+background-color: #444; /* Dark grey background */
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+margin: 10px; /* Add margin to separate buttons */
+width: auto; /* Adjust width as necessary */
+border-radius: 6px;
+transition: background-color 0.3s ease;
+}
+
+/* Optional: Add responsiveness to button width */
+@media (max-width: 600px) {
+.modal-btn, .modal-btn-gen {
+    width: 100%; /* Full width on smaller screens */
+    padding: 10px 0; /* Adjust padding for smaller screens */
+}
+} 
+
+.open-modal-button {
+width: 30px;
+height: 30px;
+border-radius: 50%; /* Makes the button circular */
+background-color: #ffffff; /* Dark grey background */
+border: 3px solid #000000; /* White border, 2px thick */
+margin-left: 30px;
+color: rgb(0, 0, 0); /* Text color */
+display: flex; /* Flexbox for centering content */
+justify-content: center; /* Center content horizontally */
+align-items: center; /* Center content vertically */
+cursor: pointer; /* Pointer cursor on hover */
+z-index: 9998;
+}
+
+.modal-btn:hover, .modal-btn-gen:hover {
+background-color: #DB5132;
+}
+
+.commentTop {
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+width: 100%; /* Ensure it takes full width */
+height: 100%; /* Ensure it takes full height */
+}
+
+.modal-btn {
+cursor: pointer; /* Make the cursor a pointer to indicate clickability */
+margin: 10px; /* Add margin to separate icons */
+}
+
+.logo {
+font-size: 24px;
+}
+
+.svg {
+width: 20px;
+height: 20px;
+top: 0;
+left: 0;
+}
+
+.icons {
+cursor: pointer; /* Make the cursor a pointer to indicate clickability */
+margin: 10px; /* Add margin to separate icons */
+display: inline-flex; /* Make it inline-flex to center content */
+align-items: center; /* Center icon vertically */
+justify-content: center; /* Center icon horizontally */
+}
+
+.icons i {
+font-size: 18px; /* Adjust icon size */
+color: white; /* Icon color */
+transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.icons i:hover {
+color: #DB5132; /* Change color on hover */
+}
+
+
+#buttons {
+display: flex;
+flex-direction: row;
+justify-content: flex-start; /* Align buttons to the start */
+align-items: flex-start; /* Align buttons to the start */
+margin-left: 20px; /* Add some space between the text and the buttons */
+}
+
+#counterSpeechText {
+flex-grow: 1; /* Allow the text to grow and take available space */
+font-size: 16px;
+}
+
+
+#commentText {
+font-size: 14px;
+display: flex;
+color: #DB5132;
+font-style: italic;
+font-weight: bold;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+
+
+.content-row {
+display: flex;
+justify-content: space-between; /* Space between text and buttons */
+align-items: center; /* Center items vertically */
+width: 100%;
+margin-top: 20px; /* Add some space above the row */
+}
+
+#counter-speech {
+display: flex;
+margin-left: 10px;
+align-items: flex-start; /* Align items to the start of the container */
+}
+
+#button-refresh {
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+width: 100%; /* Ensure it takes full width */
+height: 100%; /* Ensure it takes full height */
+}

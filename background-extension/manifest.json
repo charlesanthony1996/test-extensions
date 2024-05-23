@@ -1,0 +1,9 @@
+{
+    "name": "Module service worker demo",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    }
+}

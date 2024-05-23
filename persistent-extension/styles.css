@@ -1,0 +1,5 @@
+#myExtensionSidePanel {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+}

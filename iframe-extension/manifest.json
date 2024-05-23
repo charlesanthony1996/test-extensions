@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Contact Mapping Extension",
+    "background": { 
+        "service_worker": "background.js" 
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+        "js": ["contentScript.bundle.js"],
+        "css": ["content.styles.css"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["content.styles.css", "popup.html"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "scripting"
+    ]
+  }
+  

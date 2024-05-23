@@ -1,0 +1,28 @@
+{
+    "name": "Youtube Test Extension",
+    "version": "1.0.0",
+    "description": "This is an extension to detect and counter hate speech for a social media platform",
+    "manifest_version": 3,
+    "author": "Charles Anthony",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Youtbe Test Extension"
+    },
+    "permissions": ["tabs", "activeTab", "storage", "background", "scripting", "contextMenus"],
+    "content_scripts": [
+        {
+          "matches": ["*://*.youtube.com/*"],
+          "js": ["contentScript.js"],
+          "css": ["style.css"]
+        }
+      ],      
+    "host_permissions": [
+        "*://*.youtube.com/*"
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}

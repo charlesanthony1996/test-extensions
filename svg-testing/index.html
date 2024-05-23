@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Button Example</title>
+    <style>
+        .open-modal-button {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .open-modal-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        svg {
+            fill: #000;
+        }
+    </style>
+</head>
+<body>
+    <button id="openModalButton" class="open-modal-button">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+        width="20" height="20" viewBox="0 0 50 10"
+        preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,21.000000) scale(0.100000,-0.100000)"
+            fill="#000000" stroke="none">
+                <path d="M170 365 c-19 -14 -56 -28 -83 -31 l-50 -7 6 -73 c9 -116 60 -209
+                134 -240 41 -18 74 -6 126 44 44 43 77 135 77 217 l0 52 -48 7 c-26 3 -64 17
+                -84 31 -20 14 -38 25 -40 25 -2 -1 -19 -12 -38 -25z m85 -35 c22 -11 52 -20
+                68 -20 l30 0 -7 -57 c-10 -90 -27 -133 -67 -175 -41 -43 -68 -48 -116 -18 -41
+                25 -69 80 -83 161 -14 88 -14 89 18 89 15 0 45 9 67 19 51 24 44 24 90 1z"/>
+                <path d="M176 305 c-11 -8 -33 -15 -49 -15 l-29 0 4 -57 c3 -32 11 -71 17 -88
+                l13 -30 79 83 80 84 -38 19 c-44 23 -52 23 -77 4z"/>
+                <path d="M233 182 c-73 -80 -87 -102 -62 -102 15 0 150 160 147 176 -2 10 -29
+                -13 -85 -74z"/>
+                <path d="M256 125 c-26 -31 -46 -58 -44 -60 9 -10 68 37 83 65 28 55 11 53
+                -39 -5z"/>
+            </g>
+        </svg>
+    </button>
+</body>
+</html>
